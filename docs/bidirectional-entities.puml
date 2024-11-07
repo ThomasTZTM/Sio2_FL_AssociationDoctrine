@@ -1,0 +1,22 @@
+@startuml Bidirectional Entities
+
+
+
+class Post {
+    - id: int
+    - titre: string
+    - contenu: string
+    - createdAt: DateTime
+    - nbLikes: int
+    }
+
+class Comment {
+    - id: int
+    - createdAt: DateTime
+    - auteur: string
+    - contenu: string
+}
+
+Post "1" -- "0..*" Comment 
+
+@enduml 
