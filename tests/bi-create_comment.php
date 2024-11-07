@@ -27,7 +27,6 @@ try {
 
     // Vérification
     echo "Commentaire créé avec l'ID : " . $comment->getId() . "\n";
-
 } catch (Exception $e) {
     echo "Une erreur s'est produite : " . $e->getMessage() . "\n";
-}    
+}

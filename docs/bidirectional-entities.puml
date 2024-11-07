@@ -1,7 +1,5 @@
 @startuml Bidirectional Entities
 
-
-
 class Post {
     - id: int
     - titre: string

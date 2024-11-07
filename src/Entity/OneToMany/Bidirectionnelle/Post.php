@@ -30,7 +30,7 @@ class Post
     #[ORM\OneToMany(
         mappedBy: "post",
         targetEntity: Comment::class,
-        cascade: ["persist","remove"]
+        cascade: ["persist", "remove"]
     )]
     private Collection $comments;
 
@@ -121,4 +121,4 @@ class Post
 
         return $this;
     }
-} 
+}
