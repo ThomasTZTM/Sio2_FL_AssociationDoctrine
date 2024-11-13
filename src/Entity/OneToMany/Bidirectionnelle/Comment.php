@@ -4,7 +4,7 @@ namespace App\Entity\OneToMany\Bidirectionnelle;
 
 use Doctrine\ORM\Mapping as ORM;
 
-//#[ORM\Entity]
+#[ORM\Entity]
 #[ORM\Table(name: "comments")]
 class Comment
 {
