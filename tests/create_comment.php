@@ -10,7 +10,7 @@ use App\Entity\OneToMany\Unidirectionnelle\Post;
 
 try {
     // Récupérer un post existant (par exemple celui avec l'ID 1)
-    $post = $entityManager->find(Post::class, 14);
+    $post = $entityManager->find(Post::class, 1);
 
     if (!$post) {
         throw new Exception("Aucun post trouvé avec l'ID 1");
