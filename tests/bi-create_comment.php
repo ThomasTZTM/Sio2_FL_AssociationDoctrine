@@ -18,7 +18,10 @@ try {
     $comment->setAuteur('Auteur Exemple');
     $comment->setContenu('Super article bidirectionnel !');
     $comment->setCreatedAt(new \DateTime());
+
+    // Définir le post du commentaire
     $comment->setPost($post);
+    // Ajouter le commentaire au post
     $post->addComment($comment);
 
     // Persister le commentaire
